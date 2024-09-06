@@ -1,0 +1,159 @@
+/* Existing styles */
+.imageDescriptionWrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.imagePopup {
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 70%;
+}
+
+.backgroundOverlay {
+    background-color: rgba(0, 0, 0, .5);
+    width: 100vw;
+    height: 120vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.largeImage {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.imageTextWrapper {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.imageTextWrapper > p {
+    margin-bottom: 20px;
+}
+
+.imageHeading {
+    text-align: left;
+    font-weight: 600;
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+
+.imageDescription {
+    text-align: left;
+    line-height: 1.5;
+}
+
+.developmentImages {
+    display: flex;
+    justify-content: flex-end;
+    overflow: scroll;
+}
+
+.developmentImage {
+    width: 22%;
+    margin-left: 30px;
+}
+
+.allImages {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 1024px) {
+    .imageDescriptionWrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imageTextWrapper {
+        width: 80%;
+        /* text-align: center; */
+    }
+
+    .allImages {
+        width: 100%;
+        margin-top: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .largeImage {
+        width: 80%;
+
+    }
+
+    .developmentImages {
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .developmentImage {
+        width: 27%;
+        margin-left: 15px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .imageTextWrapper {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .imageHeading {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    .imageTextWrapper > p {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+
+    .largeImage {
+        width: 100%;
+    }
+
+    .developmentImage {
+        width: 25%;
+        margin-left: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .imageTextWrapper {
+        width: 100%;
+        padding: 0 5px;
+    }
+
+    .imageHeading {
+        font-size: 14px;
+    }
+
+    .imageDescription {
+        font-size: 12px;
+    }
+
+    .largeImage {
+        width: 100%;
+    }
+
+    .developmentImage {
+        width: 33%;
+        margin-left: 5px;
+    }
+
+    .developmentImages {
+        overflow-x: scroll;
+    }
+}

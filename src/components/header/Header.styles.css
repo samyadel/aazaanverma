@@ -1,0 +1,74 @@
+/* Existing styles */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px;
+    background-color: #fffff0;
+    margin-bottom: 50px;
+    border-radius: 5px;
+}
+
+.logo {
+    width: 60px;
+    cursor: pointer;
+}
+
+.headerLinks {
+    display: flex;
+}
+
+.headerLinks > li {
+    cursor: pointer;
+}
+
+.headerLinks > li > a {
+    margin: 0 20px;
+    color: rgba(0, 0, 0, .4);
+    text-decoration: none;
+    transition: 0.2s ease all;
+}
+
+.headerLinks > li.active > a {
+    color: #000;
+}
+
+.headerLinks > li > a:hover {
+    color: #000;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        padding: 0 20px;
+    }
+
+    .logo {
+        margin-bottom: 20px;
+    }
+
+    .headerLinks {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .headerLinks > li {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .header {
+        padding: 0 10px;
+    }
+
+    .logo {
+        width: 50px;
+    }
+
+    .headerLinks > li > a {
+        margin: 5px 0;
+        font-size: 14px;
+    }
+}
