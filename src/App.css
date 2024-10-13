@@ -1,10 +1,6 @@
 .App {
   text-align: center;
-  padding: 50px 100px;
-}
-
-@media screen and (max-width: 520px) {
-  .App {
-    padding: 50px 30px;
-  }
+  /* padding: 50px 130px; */
+  overflow-y: hidden;
+  /* position: fixed; */
 }

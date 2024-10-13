@@ -1,0 +1,441 @@
+/* General styles for large screens (like laptops/desktops) */
+.content-section {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+}
+
+.content-section.active {
+    z-index: 5;
+}
+
+.headerWrapper {
+    width: 60%;
+    text-align: center;
+    padding: 0 10%;
+}
+
+.headerWrapper._sw {
+    display: none;
+}
+
+.content-section h1 {
+    color: #fff;
+    font-size: 10vw;
+    /* Large screen default */
+    text-align: center;
+    width: 100%;
+    position: relative;
+    z-index: 5;
+}
+
+.first-div,
+.second-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+}
+
+.second-div {
+    align-items: center;
+}
+
+.explore-work {
+    font-size: 1.8vw;
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+.arrow-down-icon {
+    font-size: 2vw;
+    color: #ffb101;
+    margin-right: 8px;
+    animation: jump 0.6s infinite alternate;
+}
+
+.job-title {
+    font-size: 4.5vw;
+    font-family: ui-sans-serif;
+    color: #ffb101;
+    font-style: italic;
+}
+
+.align-left {
+    text-align: left;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.info-section {
+    justify-content: space-between;
+    width: 85%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.text-wrapper {
+    color: #fff;
+    width: 40%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    height: 100%;
+}
+
+.text-wrapper h2 {
+    font-size: 2.5vw;
+    margin-bottom: 30px;
+    color: #ffb101;
+    font-family: ui-sans-serif;
+    font-style: italic;
+}
+
+.text-wrapper p {
+    font-size: 1.2vw;
+    line-height: 1.5;
+}
+
+.seeAllBtn {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.5vw;
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.arrow-icon {
+    color: #ffb101;
+    margin-right: 10px;
+    font-size: 2vw;
+}
+
+.preview-wrapper {
+    width: 45%;
+}
+
+.preview-wrapper>.mini-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 20px;
+    max-height: 500px;
+    width: 100%;
+}
+
+.mini-gallery img {
+    max-width: 100%;
+    height: auto;
+}
+
+.mini-gallery img:nth-child(3) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+@media (max-width: 1165px) {
+    .text-wrapper {
+        width: 50%;
+    }
+
+    .text-wrapper p {
+        font-size: 1.6vw;
+    }
+}
+
+@media (max-width: 830px) {
+    .info-section {
+        flex-direction: column-reverse;
+        width: 100%;
+        align-items: center;
+    }
+
+    .text-wrapper {
+        width: 75%;
+    }
+
+    .text-wrapper p {
+        font-size: 1.8vw;
+    }
+
+    .preview-wrapper {
+        width: 75%;
+        /* margin-bottom: 30px; */
+    }
+
+    .preview-wrapper>.mini-gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .mini-gallery img {
+        width: 500px;
+    }
+
+    .mini-gallery img:nth-child(3) {
+        grid-column-start: 3;
+    }
+}
+
+@media (max-width: 768px) {
+    .info-section {
+        margin-top: 120px;
+    }
+}
+
+@media (max-width: 700px) {
+    .info-section {
+        flex-direction: column-reverse;
+    }
+
+    .text-wrapper {
+        /* margin-bottom: 50px; */
+    }
+
+    .text-wrapper h2 {
+        font-size: 1.5rem;
+    }
+
+    .text-wrapper p {
+        font-size: 0.9rem;
+    }
+
+    .preview-wrapper {
+        /* margin-bottom: 0; */
+    }
+
+    .seeAllBtn {
+        font-size: 1.2rem;
+    }
+
+    .arrow-icon {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 520px) {
+    .text-wrapper p {
+        font-size: 0.8rem;
+    }
+
+    .seeAllBtn {
+        font-size: 1rem;
+    }
+
+    .arrow-icon {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 430px) {
+    .info-section {
+        margin-top: 0px;
+    }
+
+    .text-wrapper h2 {
+        font-size: 1.2rem;
+    }
+
+    .text-wrapper p {
+        font-size: 0.7rem;
+    }
+
+    .seeAllBtn {
+        font-size: 0.9rem;
+    }
+
+    .arrow-icon {
+        font-size: 1rem;
+    }
+}
+
+@media (max-height: 740px) {
+    .content-section {
+        margin-top: 50px;
+    }
+}
+
+/* Mobile styles for smaller screens */
+@media (max-width: 768px) {
+    .headerWrapper._lw {
+        display: none;
+    }
+
+    .headerWrapper._sw {
+        display: block;
+    }
+
+    .content-section h1 {
+        font-size: 4.7rem;
+    }
+
+    .job-title {
+        font-size: 2.5rem;
+        margin-bottom: 15px;
+    }
+
+    .explore-work {
+        font-size: 1.4rem;
+        justify-content: center;
+    }
+
+    .arrow-down-icon {
+        font-size: 1.4rem;
+    }
+
+
+    .first-div {
+        margin-bottom: 30px;
+    }
+
+    .first-div,
+    .second-div {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    /* .align-left,
+    .align-right {
+        text-align: center;
+    } */
+}
+
+@media (max-width: 570px) {
+
+    .align-left,
+    .align-right {
+        text-align: center;
+    }
+}
+
+@media (max-width: 428px) {
+    .content-section {
+        margin-top: 0;
+    }
+
+    .info-section {
+        margin-top: 60px;
+    }
+
+    .content-section h1 {
+        font-size: 3.4rem;
+    }
+
+    .job-title {
+        font-size: 2rem;
+    }
+}
+
+/* Additional animations */
+/* Sliding in/out animations using top property */
+.slide-in-up {
+    position: relative;
+    top: -100%;
+    /* Start off-screen above */
+    opacity: 1;
+    animation: slideInFromUp 0.4s forwards;
+}
+
+.slide-out-up {
+    position: relative;
+    top: 0%;
+    /* Start from the current position */
+    opacity: 1;
+    animation: slideOutToUp 0.4s forwards;
+}
+
+.slide-in-down {
+    position: relative;
+    top: 100%;
+    /* Start off-screen below */
+    opacity: 1;
+    animation: slideInFromDown 0.4s forwards;
+}
+
+.slide-out-down {
+    position: relative;
+    top: 0%;
+    /* Start from the current position */
+    opacity: 1;
+    animation: slideOutToDown 0.4s forwards;
+}
+
+/* Keyframes for sliding animations using top property */
+@keyframes slideInFromUp {
+    0% {
+        transform: translateY(-100%);
+        /* Off-screen */
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0%);
+        /* Fully visible */
+        opacity: 1;
+    }
+}
+
+@keyframes slideOutToUp {
+    0% {
+        transform: translateY(0%);
+        /* Start from visible position */
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(-100%);
+        /* Move off-screen upwards */
+        opacity: 0;
+    }
+}
+
+@keyframes slideInFromDown {
+    0% {
+        transform: translateY(100%);
+        /* Off-screen */
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0%);
+        /* Fully visible */
+        opacity: 1;
+    }
+}
+
+@keyframes slideOutToDown {
+    0% {
+        transform: translateY(0%);
+        /* Start from visible position */
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(100%);
+        /* Move off-screen downwards */
+        opacity: 0;
+    }
+}
+
+@keyframes jump {
+    0% {
+        transform: translateY(-20%);
+    }
+
+    100% {
+        transform: translateY(20%);
+    }
+}

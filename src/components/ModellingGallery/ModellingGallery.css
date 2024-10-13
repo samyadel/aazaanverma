@@ -1,0 +1,96 @@
+.modellingGallerySection {
+    width: 100%;
+    position: absolute;
+    z-index: 100;
+}
+
+.modelling-projects-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.modelling-projects-wrapper > div {
+    height: 550px;
+    background-color: blue;
+    background-size: cover;
+    background-position: center;
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s;
+    width: 34%;
+    cursor: pointer;
+}
+
+.modelling-projects-wrapper > div > h2 {
+    color: #fff;
+    font-size: 30px;
+}
+
+.modelling-projects-wrapper > div:hover {
+    box-shadow: none;
+    width: 50%;
+}
+
+.modelling-projects-wrapper:hover > div:not(:hover) {
+    width: 25%;
+}
+
+.modellingWork {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -5;
+    display: flex;
+    justify-content: space-between;
+}
+
+.modellingWork > div {
+    /* width: 40%; */
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    height: 500px;
+    width: 45%;
+}
+
+.modellingWork > div > img {
+    width: 100%;
+}
+
+.textWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    color: #fff;
+}
+
+.textWrapper h2 {
+    /* background-color: blue; */
+    font-weight: 600;
+    width: 100%;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.textWrapper p {
+    font-size: 18px;
+    line-height: 1.2;
+}
+
+
+#protectLdn {
+    background-image: url("../../assets/modelling/PROTECT.LDN\ -04.jpg");
+}
+
+#Wedding {
+    background-image: url("../../assets/modelling/wedding\ 1.png");
+}
+
+#evasion {
+    background-image: url("../../assets/modelling/DSC_0512.jpg");
+}

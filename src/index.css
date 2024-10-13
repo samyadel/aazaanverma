@@ -5,10 +5,27 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #fffff0;
+  /* background-color: #fffff0; */
+  background-color: #000;
+  /* overflow-y: hidden; */
+  box-sizing: border-box;
+  color: #fff;
+}
+
+body:has(.App.noscroll) {
+  overflow-y: hidden;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button,a {
+  cursor: pointer;
 }
