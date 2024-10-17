@@ -31,11 +31,11 @@
 }
 
 .headerLinks > li.active > a {
-    color: #fff;
+    color: #FFF5EA;
 }
 
 .headerLinks > li > a:hover {
-    color: #fff;
+    color: #FFF5EA;
 }
 
 /* Responsive adjustments */

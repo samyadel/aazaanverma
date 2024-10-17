@@ -4,7 +4,9 @@ import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 import ImageDescription from "../ImageDescription/ImageDescription";
 import BounceLoader from "react-spinners/BounceLoader";
 import designImages from "./designImages";
-import modellingImages from "./modellingImages"
+import modellingImages from "./modellingImages";
+import Lightbox from "yet-another-react-lightbox";
+import "yet-another-react-lightbox/styles.css";
 
 const override = {
 	display: "block",
@@ -23,6 +25,9 @@ const Gallery = ({ imageClicked, setImageClicked, galleryType }) => {
 	const [selectedImageTools, setSelectedImageTools] = useState("");
 	const [selectedImageClient, setSelectedImageClient] = useState("");
 
+	const [openLightbox, setOpenLightbox] = useState(false);
+	const [imageIndex, setImageIndex] = useState(0);
+
 	const [loading, setLoading] = useState(true);
 
 	setTimeout(() => {
@@ -39,6 +44,7 @@ const Gallery = ({ imageClicked, setImageClicked, galleryType }) => {
 					developmentImages={selectedDevelopmentImages}
 					imageDescription={selectedImageDescription}
 					imageTitle={selectedImageTitle}
+					setImageClicked={setImageClicked}
 				/>
 			) : (
 				<div>
@@ -55,6 +61,21 @@ const Gallery = ({ imageClicked, setImageClicked, galleryType }) => {
 						</div>
 					)}
 					<div style={{ display: loading ? "none" : "block" }}>
+						{galleryType === "design" && (
+							<a
+								href="#"
+								style={{
+									width: "100%",
+									textAlign: "left",
+									display: "block",
+									marginBottom: "20px",
+									fontStyle: "italic",
+									textDecoration: "underline",
+								}}
+							>
+								Download PDF version
+							</a>
+						)}
 						<ResponsiveMasonry
 							columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}
 						>
@@ -102,24 +123,8 @@ const Gallery = ({ imageClicked, setImageClicked, galleryType }) => {
 											className="imageWrapper"
 											key={i}
 											onClick={() => {
-												setSelectedDevelopmentImages(
-													image.developmentImages
-												);
-												setSelectedImage(image.src);
-												setSelectedImageDescription(
-													image.description
-												);
-												setSelectedImageTitle(
-													image.title
-												);
-												setSelectedImageTools(
-													image.tools
-												);
-												setSelectedImageClient(
-													image.client
-												);
-
-												setImageClicked(true);
+												setImageIndex(i);
+												setOpenLightbox(true);
 											}}
 										>
 											<div className="imageOverlay"></div>
@@ -134,6 +139,19 @@ const Gallery = ({ imageClicked, setImageClicked, galleryType }) => {
 									))}
 							</Masonry>
 						</ResponsiveMasonry>
+
+						{openLightbox && (
+							<Lightbox
+								open={openLightbox}
+								close={() => setOpenLightbox(false)}
+								index={imageIndex}
+								slides={modellingImages.map((image) => {
+									return {
+										src: image.src,
+									};
+								})}
+							/>
+						)}
 					</div>
 				</div>
 			)}

@@ -131,16 +131,6 @@ const designImages = [
 		developmentImages: [],
 	},
 	{
-		src: pictogramImage,
-		title: "Olympics Pictograms Concept",
-		subheading: "Image subheading",
-		client: "University Project",
-		tools: "Illustrator, photoshop, pencil sketches",
-		description:
-			"Assigned three Olympic events—Badminton, Sport Climbing, and Diving—I was tasked with creating a series of pictograms to demonstrate consistent theming across different designs. Starting with pencil sketches of rigid figures, I refined the positioning and movements to capture dynamic, lifelike stances. Each pictogram highlights unique elements of its respective sport while maintaining a cohesive visual identity across the collection.",
-		developmentImages: [pictogramDev1, pictogramDev2],
-	},
-	{
 		src: unityImage,
 		title: "UNITY: 40s Thoughts",
 		subheading: "Image subheading",

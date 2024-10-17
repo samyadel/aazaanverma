@@ -26,7 +26,6 @@
 }
 
 .content-section h1 {
-    color: #fff;
     font-size: 10vw;
     /* Large screen default */
     text-align: center;
@@ -51,7 +50,6 @@
     font-size: 1.8vw;
     display: flex;
     align-items: center;
-    color: #fff;
 }
 
 .arrow-down-icon {
@@ -82,10 +80,10 @@
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
+    align-items: center;
 }
 
 .text-wrapper {
-    color: #fff;
     width: 40%;
     text-align: left;
     display: flex;
@@ -111,11 +109,11 @@
 .seeAllBtn {
     background: none;
     border: none;
-    color: #fff;
     font-size: 1.5vw;
     display: flex;
     align-items: center;
     margin-top: 40px;
+    color: #FFF5EA;
 }
 
 .arrow-icon {

@@ -6,6 +6,7 @@
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "lightbox.js-react": "^1.1.6",
     "loaders.css": "^0.1.2",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
@@ -15,8 +16,10 @@
     "react-responsive-masonry": "^2.3.0",
     "react-scripts": "5.0.1",
     "react-spinners": "^0.14.1",
+    "react-type-animation": "^3.2.0",
     "sass": "^1.79.2",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "yet-another-react-lightbox": "^3.21.6"
   },
   "scripts": {
     "start": "react-scripts start",

@@ -9,7 +9,7 @@ body {
   background-color: #000;
   /* overflow-y: hidden; */
   box-sizing: border-box;
-  color: #fff;
+  color: #FFF5EA;
 }
 
 body:has(.App.noscroll) {

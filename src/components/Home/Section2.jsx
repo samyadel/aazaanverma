@@ -20,24 +20,12 @@ function Section2({ scrollValue, setShowGallery, setGalleryType }) {
 					}`}
 				>
 					<div>
-						<h2>I'm a designer</h2>
+						<h2>Designer</h2>
 						<p>
-							Lorem ipsum dolor sit amet consectetur, adipisicing
-							elit. Voluptatibus animi quasi hic dolore, iusto
-							dignissimos dolores quidem exercitationem dicta
-							nesciunt! Labore nobis esse voluptates modi mollitia
-							dolores illo voluptatem eum blanditiis odio
-							architecto, soluta in consequuntur officia deleniti
-							ratione repellat iure id aut. Dolorem natus
-							provident dignissimos adipisci asperiores nisi quam
-							doloribus esse vero quod quae aspernatur voluptas
-							ad, dolores, tempora accusantium! Veritatis quis
-							debitis delectus assumenda vitae minima qui saepe
-							tenetur optio, illo incidunt hic, dignissimos illum
-							cupiditate corporis? Esse enim non consectetur,
-							laudantium molestiae veniam possimus. Quas obcaecati
-							omnis porro quasi, velit nulla quod aut hic
-							praesentium
+							2 years in the game, 10+ learning. I craft visuals
+							that speak louder than words. Whether it’s branding,
+							digital design, or something in between, every
+							project is built to make an impact.
 						</p>
 					</div>
 

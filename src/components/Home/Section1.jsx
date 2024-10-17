@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./Section1.styles.css";
+import { TypeAnimation } from "react-type-animation";
 
 import { HiArrowLongDown } from "react-icons/hi2";
 
@@ -16,7 +16,19 @@ function Section1({ scrollValue, setScrollValue }) {
 						}`}
 					>
 						<span className="align-left">Aazaan</span>
-						<span className="job-title">Designer</span>
+						<TypeAnimation
+							sequence={[
+								"Designer", // Types 'One'
+								2000, // Waits 1s
+								"Model", // Deletes 'One' and types 'Two'
+								2000, // Waits 2s
+							]}
+							wrapper="span"
+							className="job-title"
+							cursor={true}
+							repeat={Infinity}
+						/>
+						{/* <span className="job-title">Designer</span> */}
 					</div>
 					<div
 						className={`second-div ${
@@ -44,7 +56,18 @@ function Section1({ scrollValue, setScrollValue }) {
 							scrollValue === 0 ? "slide-in-up" : "slide-out-up"
 						}`}
 					>
-						<span className="job-title">Designer</span>
+						<TypeAnimation
+							sequence={[
+								"Designer", // Types 'One'
+								2000, // Waits 1s
+								"Model", // Deletes 'One' and types 'Two'
+								2000, // Waits 2s
+							]}
+							wrapper="span"
+							className="job-title"
+							cursor={true}
+							repeat={Infinity}
+						/>
 						<span className="align-left">Aazaan</span>
 						<span className="align-right">Verma</span>
 					</div>

@@ -48,8 +48,17 @@ function Header({
 				{/* <li className={scrollValue == 3 && `active`}>
           <a>About</a>
         </li> */}
-				<li className={scrollValue == 4 && `active`}>
-					<a href="mailto:aazaanverma@gmail.com">Contact</a>
+				<li className={scrollValue == 3 && `active`}>
+					{/* <a href="mailto:aazaanverma@gmail.com">Contact</a> */}
+					<a
+						onClick={() => {
+							setScrollValue(3);
+							setShowGallery(false);
+							setImageClicked(false);
+						}}
+					>
+						Contact
+					</a>
 				</li>
 			</ul>
 		</header>

@@ -25,24 +25,13 @@ function Section3({
 					}`}
 				>
 					<div>
-						<h2>I'm a model</h2>
+						<h2>Model</h2>
 						<p>
-							Lorem ipsum dolor sit amet consectetur, adipisicing
-							elit. Voluptatibus animi quasi hic dolore, iusto
-							dignissimos dolores quidem exercitationem dicta
-							nesciunt! Labore nobis esse voluptates modi mollitia
-							dolores illo voluptatem eum blanditiis odio
-							architecto, soluta in consequuntur officia deleniti
-							ratione repellat iure id aut. Dolorem natus
-							provident dignissimos adipisci asperiores nisi quam
-							doloribus esse vero quod quae aspernatur voluptas
-							ad, dolores, tempora accusantium! Veritatis quis
-							debitis delectus assumenda vitae minima qui saepe
-							tenetur optio, illo incidunt hic, dignissimos illum
-							cupiditate corporis? Esse enim non consectetur,
-							laudantium molestiae veniam possimus. Quas obcaecati
-							omnis porro quasi, velit nulla quod aut hic
-							praesentium
+							Stepping into the frame with intention and purpose.
+							Whether for clothing brands or editorials, each
+							shoot unfolds a story and unveils hidden layers.
+							Capturing not just the memory of a moment, but the
+							essence beneath it.
 						</p>
 					</div>
 
